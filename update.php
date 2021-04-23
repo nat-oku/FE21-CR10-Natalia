@@ -20,12 +20,12 @@ if ($_GET['id']) {
        $mediaStatus = $data['mediaStatus'];
        $img = $data['img'];
 
-   } /* else {
+   } else {
        header( "location: error.php");
    }
    $connect->close();
 } else {
-   header("location: error.php");*/
+   header("location: error.php");
 }
 ?>
 
@@ -48,7 +48,7 @@ if ($_GET['id']) {
     <fieldset>
       <legend>
         <h2 class='textColor-4 text-center'>Update request</h2>
-        <img class='img-thumbnail rounded-circle' src='img/<?php echo $img ?>'>
+        <img class='img-thumbnail' src='img/<?php echo $img ?>'>
       </legend>
       <form action ="actions/a_update.php" method="post"  enctype="multipart/form-data">
         <table class="table">
