@@ -1,6 +1,9 @@
 <!-- connecting the index file to the DataBase -->
 <?php require_once 'actions/db_connection.php' ?>
 
+<!-- connecting the index file to the table "	library_stock" -->
+<?php require_once 'actions/table_connection.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,11 +29,20 @@
   </header>
 
     <!-- inserting main section -->
-    <main>
-      <?php
-        require_once 'components/main.php'
-      ?>
-    </main>
+    <table class='table table-striped'>
+               <thead class='table-success' >
+                   <tr>
+                        <th>Picture</th>
+                       <th>Media Type</th>
+                       <th>Title</th>
+                        <th>Action</th>
+                   </tr>
+               </thead>
+               <tbody>
+                    <?= $tbody;?>
+
+                </tbody>
+            </table>
 
   <!-- inserting footer -->
   <footer>
