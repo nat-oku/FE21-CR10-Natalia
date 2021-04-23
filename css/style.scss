@@ -1,0 +1,39 @@
+@import 'variables';
+
+
+/* styling the bg image of the header */
+.bg-image{
+  background: url(../img/jaredd-craig-HH4WBGNyltc-unsplash.jpg) no-repeat center fixed;
+  height: 80vh;
+  -webkit-background-cover: cover ;
+  -moz-background-cover: cover ;
+  -o-background-cover: cover ;
+  background-size: cover;
+
+  h1 {
+    font-size: 3.5em;
+    text-shadow: 1px 1px 10px $brand-color-3, -1px -1px 10px $brand-color-3;
+  }
+}
+
+/* stylings for the navbar */
+nav {
+  z-index: 1;
+  height: 100vh;
+  width: auto;
+  background-color: $brand-color-2-opacity;
+
+  a {
+    color: $brand-color-1;
+      
+    &:hover {
+      color: $brand-color-4;
+    }
+    
+    &:active {
+      border-bottom: 2px solid $brand-color-1;
+      color: $brand-color-1;
+    }
+  }
+}
+
