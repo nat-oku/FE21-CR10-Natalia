@@ -12,7 +12,7 @@ function file_upload($img) {
    $fileExtension = strtolower(pathinfo($fileName,PATHINFO_EXTENSION));    
    $filesAllowed = ["png", "jpg", "jpeg"];
    if ($fileError == 4) {      
-       $result->ErrorMessage = "No picture was chosen. Inserting an image is mandatory.";
+       $result->ErrorMessage = "No picture was chosen. You can insert it later.";
        return $result;
    } else {
        if (in_array($fileExtension, $filesAllowed)) {
