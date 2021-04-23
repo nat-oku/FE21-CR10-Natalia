@@ -1,0 +1,76 @@
+/* color palette */
+$brand-color-1: #fff;
+$brand-color-1-opacity: rgba(255, 255, 255, 0.3);
+$brand-color-2: #000;
+$brand-color-2-opacity: rgba(0, 0, 0, 0.3);
+$brand-color-3: #001524;
+$brand-color-4: #15616D;
+$brand-color-5: #FF7D00;
+$brand-color-6: #FFECD1;
+
+
+  /* fonts variables */
+$brand-font-1: 'Raleway', serif, 'Open Sans';
+$brand-font-2: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+
+h1, h2 {
+  font-family: $brand-font-1;
+}
+
+h3, h4, h5, p, a {
+  font-family: $brand-font-2;
+}
+
+/* background color variables*/
+.bgColor-1 {
+  background-color: $brand-color-1;
+} 
+
+.bgColor-2 {
+  background-color: $brand-color-2;
+} 
+
+.bgColor-3 {
+  background-color: $brand-color-3;
+} 
+
+.bgColor-4 {
+  background-color: $brand-color-4;
+} 
+
+.bgColor-5 {
+  background-color: $brand-color-5;
+} 
+
+.bgColor-6 {
+  background-color: $brand-color-6;
+} 
+
+/* font color variables*/
+.textColor-1 {
+  color: $brand-color-1;
+} 
+
+.textColor-1-opacity {
+  color: $brand-color-1;
+} 
+
+.textColor-2 {
+  color: $brand-color-2;
+} 
+
+.textColor-3 {
+  color: $brand-color-3;
+} 
+
+.textColor-4 {
+  color: $brand-color-4;
+} 
+
+.textColor-5 {
+  color: $brand-color-5;
+} 
+
+.textColor-6 {
+  color: $brand-color-6;
+} 
