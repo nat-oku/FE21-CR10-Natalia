@@ -31,21 +31,29 @@
     ?>
   </header>
 
+  <main class="container pt-3 pb-3">
+  <div class='mb-3'>
+    <a href="create.php"><button class='btn bgColor-4 textColor-1'type = "button" >Add product</button></a>
+  </div>
     <!-- inserting main section -->
-    <table class='table table-striped'>
-               <thead class='table-success' >
-                   <tr>
-                        <th>Picture</th>
-                       <th>Media Type</th>
-                       <th>Title</th>
-                        <th>Action</th>
-                   </tr>
-               </thead>
-               <tbody>
-                    <?= $tbody;?>
-
-                </tbody>
-            </table>
+    <table class='table table-striped table-dark table-hover'>
+      <thead class='table bgColor-4 textColor-1' >
+        <tr>
+          <th>Picture</th>
+          <th>Media Type</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Description</th>
+          <th>Date of Publication</th>
+          <th>Publisher</th>
+          <th>status</th>
+        </tr>
+      </thead>
+      <tbody class="w-100">
+        <?= $tbody;?>
+      </tbody>
+    </table>
+  </main>
 
   <!-- inserting footer -->
   <footer>
