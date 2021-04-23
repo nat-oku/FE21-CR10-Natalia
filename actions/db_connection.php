@@ -6,7 +6,7 @@
 $hostname = "127.0.0.1";
 $username = "root";
 $password = "";
-$dbname = "library_stock";
+$dbname = "cr10_natalia_biglibrary";
 
 // create connection
 $connect = mysqli_connect($hostname, $username, $password, $dbname);
