@@ -25,61 +25,60 @@
   </header>
 
   <div class="container pt-3 pb-3">
-  <fieldset>
-    <legend class='h2'>Add Media to library</legend>
-    <form action="actions/a_create.php"  method= "post" enctype= "multipart/form-data">
-      <table  class='table'>
-        <tr>
-          <th>Media Type</th>
-          <td><input class ='form-control' type="text"  name="mediaType"  placeholder ="Insert type of media (i.e. book, ebook,DVD, CD)" /></td>
+  <fieldset class="">
+    <legend><h2 class='textColor-4 text-center'>Add media to library</h2></legend>
+    <form action="actions/a_create.php" method= "post" enctype= "multipart/form-data">
+      <table class='table text-end'>
+        <tr class="">
+          <th><h6>Media Type</h6></th>
+          <td><input class ='form-control' type="text"  name="mediaType"  placeholder ="Insert type of media (i.e. book, ebook, DVD, CD)" /></td>
         </tr>
         <tr>
-          <th>Title</th>
+          <th><h6>Title</h6></th>
           <td><input class ='form-control' type="text"  name="title"  placeholder ='Insert the title (i.e. "The Lord of the Rings" )'/></td>
         </tr>
         <tr>
-          <th>First Name</th>
+          <th><h6>First Name</h6></th>
           <td><input class ='form-control' type="text"  name="authorFirstName"  placeholder ='The first name of the author'/></td>
         </tr>
         <tr>
-          <th>Last Name</th>
+          <th><h6>Last Name</h6></th>
           <td><input class ='form-control' type="text"  name="authorLastName"  placeholder ='The last (family) name of the author'/></td>
         </tr>
         <tr>
-          <th>Description</th>
+          <th><h6>Description</h6></th>
           <td><input class ='form-control' type="text"  name="shortDesrc"  placeholder ='Insert a short description of the item'/></td>
         </tr>
         <tr>
-          <th>ISBN</th>
-          <td><input class ='form-control' type="text"  name="ISBN"  placeholder ='Place for ISBN (i.e. 123-4-567-8910-2)'/></td>
+          <th><h6>ISBN</h6></th>
+          <td><input class ='form-control' type="text"  name="ISBN"  placeholder ='Insert the ISBN number (i.e. 123-4-567-8910-2)'/></td>
         </tr>
         <tr>
-          <th>Picture</th>
+          <th><h6>Picture</h6></th>
           <td><input class ='form-control' type="file" name="img"/></td>
         </tr>
         <tr>
-          <th>Date of Publishing</th>
+          <th><h6>Date of Publishing</h6></th>
           <td><input class ='form-control' type="date" name="publishDate"/></td>
         </tr>
         <tr>
-          <th>Name of the publisher</th>
+          <th><h6>Name of the publisher</h6></th>
           <td><input class ='form-control' type="text" name="publisherName" placeholder ='i.e. Random House LCC US'/></td>
         </tr>
         <tr>
-          <th>Address of the publisher</th>
+          <th><h6>Address of the publisher</h6></th>
           <td><input class ='form-control' type="text" name="publisherAddress" placeholder ='i.e. Kärntner Ring 1, 1010 Vienna, Austria'/></td>
         </tr>
         <tr>
-          <th>Size of the publisher</th>
+          <th><h6>Size of the publisher</h6></th>
           <td><input class ='form-control' type="text" name="size" placeholder ='small/medium/big'/></td>
         </tr>
         <tr>
-          <th>Status</th>
+          <th><h6>Status</h6></th>
           <td><input class ='form-control' type="text" name="status" placeholder ='active/inactive'/></td>
         </tr>
 
         <tr>
-          <td></td>
           <td><button class ='btn bgColor-5 textColor-1' type= "submit">Insert media item</button></td>
         </tr>
       </table>
