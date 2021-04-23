@@ -11,7 +11,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- inserting footer -->
+  <!-- inserting fonts php file -->
+  <?php require_once 'components/fonts.php'?>
+
+  <!-- inserting Bootstrap -->
   <?php require_once 'components/boot_CSS.php'?>
 
   <!-- CSS only for this project -->
