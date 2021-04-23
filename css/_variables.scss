@@ -17,7 +17,16 @@ h1, h2 {
   font-family: $brand-font-1;
 }
 
-h3, h4, h5, p, a {
+h3, h4, h5, h6, p, a {
+  font-family: $brand-font-2;
+}
+
+/* text families */
+.text-fam-1 {
+  font-family: $brand-font-1;
+}
+
+.text-fam-2 {
   font-family: $brand-font-2;
 }
 
@@ -74,3 +83,8 @@ h3, h4, h5, p, a {
 .textColor-6 {
   color: $brand-color-6;
 } 
+
+
+.alignCenter {
+  margin: 0 auto;
+}

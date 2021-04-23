@@ -4,7 +4,16 @@ h1, h2 {
   font-family: "Raleway", serif, "Open Sans";
 }
 
-h3, h4, h5, p, a {
+h3, h4, h5, h6, p, a {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* text families */
+.text-fam-1 {
+  font-family: "Raleway", serif, "Open Sans";
+}
+
+.text-fam-2 {
   font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -60,6 +69,10 @@ h3, h4, h5, p, a {
 
 .textColor-6 {
   color: #FFECD1;
+}
+
+.alignCenter {
+  margin: 0 auto;
 }
 
 /* styling the bg image of the header */
