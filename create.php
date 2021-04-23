@@ -70,8 +70,8 @@
           <td><input class ='form-control' type="text" name="size" placeholder ='small/medium/big'/></td>
         </tr>
         <tr>
-          <th><h6>Status</h6></th>
-          <td><input class ='form-control' type="text" name="status" placeholder ='active/inactive'/></td>
+          <th><h6>mediaStatus</h6></th>
+          <td><input class ='form-control' type="text" name="mediaStatus" placeholder ='active/inactive'/></td>
         </tr>
         <tr>
           <th><h6>Address of the publisher</h6></th>

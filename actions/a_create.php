@@ -12,14 +12,14 @@ if ($_POST) {
   $publishDate = $_POST['publishDate'];
   $publisherName = $_POST['publisherName'];
   $size = $_POST['size'];
-  $status = $_POST['status'];
+  $mediaStatus = $_POST['mediaStatus'];
   $publisherAddress = $_POST['publisherAddress'];
 
    $uploadError = '';
    //this function exists in the service file upload.
    $img = file_upload($_FILES['img']);  
  
-   $sql = "INSERT INTO library_stock (mediaType, title, authorFirstName, authorLastName, shortDesrc, ISBN, img, publishDate, publisherName, size, status, publisherAddress) VALUES ('$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$img->fileName', '$publishDate'', '$publisherName', '$size', '$status', '$publisherAddress')";
+   $sql = "INSERT INTO library_stock (mediaType, title, authorFirstName, authorLastName, shortDesrc, ISBN, img, publishDate, publisherName, size, mediaStatus, publisherAddress) VALUES ('$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$img->fileName', '$publishDate'', '$publisherName', '$size', '$mediaStatus', '$publisherAddress')";
 
    if ($connect->query($sql) === true ) {
        $class = "success";
@@ -35,7 +35,7 @@ if ($_POST) {
             <td> $publishDate </td>
             <td> $publisherName </td>
             <td> $size </td>
-            <td> $status </td>
+            <td> $mediaStatus </td>
             <td> $publisherAddress </td>
 
             </tr></table><hr>";
