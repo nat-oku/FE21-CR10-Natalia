@@ -17,12 +17,12 @@
   <title>N@t's Lib || Add media</title>
 </head>
 <body>
-
+<!-- 
   <header>
-    <?php
+    
       require_once 'components/navbar.php'
-    ?>
-  </header>
+    
+  </header>-->
 
   <div class="container pt-3 pb-3">
   <fieldset class="">
