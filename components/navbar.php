@@ -1,18 +1,24 @@
 <!-- add layout for the navbar visible on all sites -->
 
-<nav class="navbar navbar-light bg-light shadow-sm">
-  <div class="container-fluid d-flex justify-content-center justify-content-md-between">
-    <ul class="nav text-uppercase">
+<div class="bg-image d-flex justify-content-center align-items-center">
+  <nav class="align-self-start mt-5">
+    <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a class="nav-link fs-4" href="#"><span class="text-gold fw-light">Home</span></a>
+        <a class="nav-link active fs-5" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fs-4" href="#"><span class="text-gold fw-light">Items</span></a>
+        <a class="nav-link active fs-5" href="#locations">Items</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link fs-4" href="#"><span class="text-gold fw-light">Publishers</span></a>
+        <a class="nav-link active fs-5" href="#restaurant">Publishers</a>
       </li>
     </ul>
-    <a class="navbar-brand fs-1 text-gold fw-light" routerLink="/"><i class="text-gold fas fa-route"></i><span class="text-gold fw-light"> N@t's Lib</span></a> 
+  </nav>
+
+    <!-- fullpage background pic -->
+  <div class="mask maskBg">  <!-- the mask will help us make the img darker so our content will be more visible -->
+    <div class="d-flex justify-content-center align-items-start">
+      <h1 class="textColor-1 font-1 text-center">Welcome N@t's Lib</h1>
+    </div>
   </div>
-</nav>
+</div>
