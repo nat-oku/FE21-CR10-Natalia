@@ -41,7 +41,6 @@ if ($_POST) {
             </tr></table><hr>";
        $uploadError = ($img->error !=0)? $img->ErrorMessage :'';
    } else {
-       $class = "danger";
        $message = "Error while creating record. Try again: <br>" . $connect->error;
        $uploadError = ($img->error !=0)? $img->ErrorMessage :'';
    }
@@ -56,7 +55,7 @@ if ($_POST) {
 <html lang= "en">
   <head>
     <meta charset="UTF-8">
-    <title>Update</title>
+    <title>N@t's Lib || Update</title>
     <!-- inserting fonts php file -->
     <?php require_once '../components/fonts.php'?>
     
@@ -68,14 +67,14 @@ if ($_POST) {
 
    </head>
    <body>
-     <div class="container bg-primary">
+     <div class="container">
        <div class="mt-3 mb-3">
-        <h2 class="textColor-4">Create request response</h2>
+        <h2 class="textColor-4">ERROR</h2>
       </div>
-       <div class="alert alert-<?=$class;?>" role="alert">
+       <div class="alert bgColor-5 textColor-1" role="alert">
         <p><?php echo ($message) ?? ''; ?></p>
         <p><?php echo ($uploadError) ?? ''; ?></p>
-        <a href='../index.php'><button class="btn bgColor-4 textColor-1" type='button'>Home</button></a>
+        <a href='../create.php'><button class="btn bgColor-1 textColor-5" type='button'>Go back</button></a>
       </div >
      </div>
    </body>
