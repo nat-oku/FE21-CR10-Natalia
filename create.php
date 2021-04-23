@@ -27,43 +27,43 @@
   <div class="container pt-3 pb-3">
   <fieldset class="">
     <legend><h2 class='textColor-4 text-center'>Add media to library</h2></legend>
-    <form action="actions/a_create.php" method= "post" enctype= "multipart/form-data">
+    <form action="actions/a_create.php" method="post" enctype="multipart/form-data">
       <table class='table text-end'>
         <tr class="">
           <th><h6>Media Type</h6></th>
-          <td><input class ='form-control' type="text"  name="mediaType"  placeholder ="Insert type of media (i.e. book, ebook, DVD, CD)" /></td>
+          <td><input class='form-control' type="text"  name="mediaType"  placeholder ="Insert type of media (i.e. book, ebook, DVD, CD)" /></td>
         </tr>
         <tr>
           <th><h6>Title</h6></th>
-          <td><input class ='form-control' type="text"  name="title"  placeholder ='Insert the title (i.e. "The Lord of the Rings" )'/></td>
+          <td><input class='form-control' type="text"  name="title"  placeholder ='Insert the title (i.e. "The Lord of the Rings" )'/></td>
         </tr>
         <tr>
           <th><h6>First Name</h6></th>
-          <td><input class ='form-control' type="text"  name="authorFirstName"  placeholder ='The first name of the author'/></td>
+          <td><input class='form-control' type="text"  name="authorFirstName"  placeholder ='The first name of the author'/></td>
         </tr>
         <tr>
           <th><h6>Last Name</h6></th>
-          <td><input class ='form-control' type="text"  name="authorLastName"  placeholder ='The last (family) name of the author'/></td>
+          <td><input class='form-control' type="text"  name="authorLastName"  placeholder ='The last (family) name of the author'/></td>
         </tr>
         <tr>
           <th><h6>Description</h6></th>
-          <td><input class ='form-control' type="text"  name="shortDesrc"  placeholder ='Insert a short description of the item'/></td>
+          <td><input class='form-control' type="text"  name="shortDesrc"  placeholder ='Insert a short description of the item'/></td>
         </tr>
         <tr>
           <th><h6>ISBN</h6></th>
-          <td><input class ='form-control' type="text"  name="ISBN"  placeholder ='Insert the ISBN number (i.e. 123-4-567-8910-2)'/></td>
+          <td><input class='form-control' type="text"  name="ISBN"  placeholder ='Insert the ISBN number (i.e. 123-4-567-8910-2)'/></td>
         </tr>
         <tr>
           <th><h6>Picture</h6></th>
-          <td><input class ='form-control' type="file" name="img"/></td>
+          <td><input class='form-control' type="file" name="img"/></td>
         </tr>
         <tr>
           <th><h6>Date of Publishing</h6></th>
-          <td><input class ='form-control' type="text" name="publishDate"/></td>
+          <td><input class='form-control' type="text" name="publishDate"/></td>
         </tr>
         <tr>
           <th><h6>Name of the publisher</h6></th>
-          <td><input class ='form-control' type="text" name="publisherName" placeholder ='i.e. Random House LCC US'/></td>
+          <td><input class='form-control' type="text" name="publisherName" placeholder ='i.e. Random House LCC US'/></td>
         </tr>
         <tr>
           <th><h6>Size of the publisher</h6></th>

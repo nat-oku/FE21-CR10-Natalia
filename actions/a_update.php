@@ -22,9 +22,9 @@ if ($_POST) {
    $img = file_upload($_FILES['img']);//file_upload() called  
    if ($img->error===0){
        ($_POST["img"]=="image.png")?: unlink("../img/$_POST[img]");          
-       $sql = "UPDATE library_stock SET name = '$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$img->fileName', '$publishDate'', '$publisherName', '$publisherAddress', '$publisherSize', '$mediaStatus' WHERE itemID = {$itemID}";
+       $sql = "UPDATE library_stock SET name = '$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$img->fileName', '$publishDate', '$publisherName', '$publisherAddress', '$publisherSize', '$mediaStatus' WHERE itemID = {$itemID}";
    } else{
-       $sql = "UPDATE library_stock SET name = '$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$publishDate'', '$publisherName', '$publisherAddress', '$publisherSize', '$mediaStatus' WHERE itemID = {$itemID}";
+       $sql = "UPDATE library_stock SET name = '$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$publishDate', '$publisherName', '$publisherAddress', '$publisherSize', '$mediaStatus' WHERE itemID = {$itemID}";
    }  /*  
    if ($connect->query($sql) === TRUE) {
        $class = "success";
