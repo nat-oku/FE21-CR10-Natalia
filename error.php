@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Error</title>
+        <title>N@t's Lib || Error</title>
         <!-- inserting fonts php file -->
         <?php require_once 'components/fonts.php'?>
         
