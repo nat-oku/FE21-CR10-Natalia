@@ -59,7 +59,7 @@
         </tr>
         <tr>
           <th><h6>Date of Publishing</h6></th>
-          <td><input class ='form-control' type="date" name="publishDate"/></td>
+          <td><input class ='form-control' type="text" name="publishDate"/></td>
         </tr>
         <tr>
           <th><h6>Name of the publisher</h6></th>
@@ -67,7 +67,7 @@
         </tr>
         <tr>
           <th><h6>Size of the publisher</h6></th>
-          <td><input class ='form-control' type="text" name="size" placeholder ='small/medium/big'/></td>
+          <td><input class ='form-control' type="text" name="publisherSize" placeholder ='small/medium/big'/></td>
         </tr>
         <tr>
           <th><h6>mediaStatus</h6></th>
@@ -77,6 +77,7 @@
           <th><h6>Address of the publisher</h6></th>
           <td><input class ='form-control' type="text" name="publisherAddress" placeholder ='i.e. Kärntner Ring 1, 1010 Vienna, Austria'/></td>
         </tr>
+        
         <tr>
           <td><button class ='btn bgColor-5 textColor-1' type= "submit">Insert media item</button></td>
         </tr>

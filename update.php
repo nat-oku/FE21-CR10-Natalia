@@ -16,9 +16,9 @@ if ($_GET['itemID']) {
        $img = $data['img'];
        $publishDate = $data['publishDate'];
        $publisherName =  $data['publisherName'];
-       $size = $data['size'];
-       $mediaStatus = $data['mediaStatus'];
        $publisherAddress = $data['publisherAddress'];
+       $publisherSize = $data['publisherSize'];
+       $mediaStatus = $data['mediaStatus'];
 
    } /* else {
        header( "location: error.php");
@@ -94,7 +94,7 @@ if ($_GET['itemID']) {
           </tr>
           <tr>
             <th><h6>Size of the publisher</h6></th>
-            <td><input class ="form-control" type="text" name="size" placeholder ='small/medium/big' value="<?php echo $size ?>"   /></td>
+            <td><input class ="form-control" type="text" name="publisherSize" placeholder ='small/medium/big' value="<?php echo $publisherSize ?>"   /></td>
           </tr>
           <tr>
             <th><h6>mediaStatus</h6></th>

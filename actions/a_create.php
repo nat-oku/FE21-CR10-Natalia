@@ -11,15 +11,15 @@ if ($_POST) {
   $ISBN = $_POST['ISBN'];
   $publishDate = $_POST['publishDate'];
   $publisherName = $_POST['publisherName'];
-  $size = $_POST['size'];
-  $mediaStatus = $_POST['mediaStatus'];
   $publisherAddress = $_POST['publisherAddress'];
+  $publisherSize = $_POST['publisherSize'];
+  $mediaStatus = $_POST['mediaStatus'];
 
    $uploadError = '';
    //this function exists in the service file upload.
    $img = file_upload($_FILES['img']);  
  
-   $sql = "INSERT INTO library_stock (mediaType, title, authorFirstName, authorLastName, shortDesrc, ISBN, img, publishDate, publisherName, size, mediaStatus, publisherAddress) VALUES ('$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$img->fileName', '$publishDate'', '$publisherName', '$size', '$mediaStatus', '$publisherAddress')";
+   $sql = "INSERT INTO library_stock (mediaType, title, authorFirstName, authorLastName, shortDesrc, ISBN, img, publishDate, publisherName, publisherAddress, publisherSize, mediaStatus) VALUES ('$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$img->fileName', '$publishDate'', '$publisherName', '$publisherAddress', '$publisherSize', '$mediaStatus')";
 
    if ($connect->query($sql) === true ) {
        $class = "success";
