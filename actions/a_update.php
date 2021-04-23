@@ -3,7 +3,6 @@ require_once 'db_connection.php';
 require_once  'file_upload.php';
 
 if ($_POST) {
-  $itemID = $_POST['itemID'];
   $mediaType = $_POST['mediaType'];
   $title = $_POST['title'];
   $authorFirstName = $_POST['authorFirstName'];
@@ -15,17 +14,44 @@ if ($_POST) {
   $publisherSize = $_POST['publisherSize'];
   $mediaStatus = $_POST['mediaStatus'];
   $publisherAddress = $_POST['publisherAddress'];
+  $id = $_POST['id'];
 
    //variable for upload pictures errors is initialized
    $uploadError = '';
 
-   $img = file_upload($_FILES['img']);//file_upload() called  
+   $img = file_upload($_FILES['img']);//file_upload() called
+
    if ($img->error===0){
        ($_POST["img"]=="image.png")?: unlink("../img/$_POST[img]");          
-       $sql = "UPDATE library_stock SET name = '$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$publishDate', '$publisherName', '$publisherAddress', '$publisherSize', '$mediaStatus', '$img->fileName' WHERE itemID = {$itemID}";
+       $sql = "UPDATE library_stock SET
+       mediaType = '$mediaType',
+       title = '$title',
+       authorFirstName = '$authorFirstName',
+       authorLastName = '$authorLastName',
+       shortDesrc = '$shortDesrc',
+       ISBN = '$ISBN',
+       publishDate = '$publishDate',
+       publisherName = '$publisherName',
+       publisherAddress = '$publisherAddress',
+       publisherSize = '$publisherSize',
+       mediaStatus = '$mediaStatus',
+       img = '$img->fileName'
+       WHERE id = {$id}";
    } else{
-       $sql = "UPDATE library_stock SET name = '$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$publishDate', '$publisherName', '$publisherAddress', '$publisherSize', '$mediaStatus' WHERE itemID = {$itemID}";
-   }  /*  
+       $sql = "UPDATE library_stock SET
+       mediaType = '$mediaType',
+       title = '$title',
+       authorFirstName = '$authorFirstName',
+       authorLastName = '$authorLastName',
+       shortDesrc = '$shortDesrc',
+       ISBN = '$ISBN',
+       publishDate = '$publishDate',
+       publisherName = '$publisherName',
+       publisherAddress = '$publisherAddress',
+       publisherSize = '$publisherSize',
+       mediaStatus = '$mediaStatus',
+       WHERE id = {$id}";
+   }
    if ($connect->query($sql) === TRUE) {
        $class = "success";
        $message = "The record was successfully updated";
@@ -37,7 +63,7 @@ if ($_POST) {
    }
    $connect->close();    
 } else {
-   header("location: ../error.php");*/
+   header("location: ../error.php");
 }
 ?>
 
@@ -56,7 +82,7 @@ if ($_POST) {
             <div class="alert alert-<?php echo $class;?>" role="alert">
                <p><?php echo ($message) ?? ''; ?></p>
                 <p><?php echo ($uploadError) ?? ''; ?></p>
-                <a href='../update.php?id=<?=$itemID;?>' ><button class="btn btn-warning" type='button'>Back</button></a>
+                <a href='../update.php?id=<?=$id;?>' ><button class="btn btn-warning" type='button'>Back</button></a>
                 <a href='../index.php'><button class="btn btn-success"  type='button'>Home</button></a>
             </div>
        </div >

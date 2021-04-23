@@ -1,9 +1,9 @@
 <?php
 require_once 'actions/db_connection.php';
 
-if ($_GET['itemID']) {
-   $itemID = $_GET['itemID'];
-   $sql = "SELECT * FROM library_stock WHERE itemID = {$itemID}";
+if ($_GET['id']) {
+   $id = $_GET['id'];
+   $sql = "SELECT * FROM library_stock WHERE id = {$id}";
    $result = $connect->query($sql);
    if ($result->num_rows == 1) { 
        $data = $result->fetch_assoc();
@@ -13,12 +13,12 @@ if ($_GET['itemID']) {
        $authorLastName = $data['authorLastName'];
        $shortDesrc = $data['shortDesrc'];
        $ISBN = $data['ISBN'];
-       $img = $data['img'];
        $publishDate = $data['publishDate'];
        $publisherName =  $data['publisherName'];
        $publisherAddress = $data['publisherAddress'];
        $publisherSize = $data['publisherSize'];
        $mediaStatus = $data['mediaStatus'];
+       $img = $data['img'];
 
    } /* else {
        header( "location: error.php");
@@ -105,10 +105,10 @@ if ($_GET['itemID']) {
             <td><input class ="form-control" type="text" name="publisherAddress" placeholder ='i.e. Kärntner Ring 1, 1010 Vienna, Austria' value="<?php echo $publisherAddress ?>" /></td>
           </tr>
           <tr>
-            <input type= "hidden"  name= "itemID"  value= "<?php echo $data['itemID'] ?>" />
-            <input type= "hidden"  name= "img"  value= "<?php echo $data['img'] ?>" />
+            <input type= "hidden" name="id"  value="<?php echo $data['id'] ?>" />
+            <input type= "hidden" name="img"  value="<?php echo $data['img'] ?>" />
             <td><button class ="btn btn-success" type ="submit">Save Changes</button></td>
-            <td><a href="index.php" ><button class ="btn btn-warning" type ="button">Back </button></a></td>
+            <td><a href="index.php" ><button class ="btn btn-warning" type="button">Back </button></a></td>
           </tr>
         </table>
       </form>
