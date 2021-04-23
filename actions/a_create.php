@@ -19,26 +19,26 @@ if ($_POST) {
    //this function exists in the service file upload.
    $img = file_upload($_FILES['img']);  
  
-   $sql = "INSERT INTO library_stock (mediaType, title, authorFirstName, authorLastName, shortDesrc, ISBN, img, publishDate, publisherName, publisherAddress, publisherSize, mediaStatus) VALUES ('$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$img->fileName', '$publishDate', '$publisherName', '$publisherAddress', '$publisherSize', '$mediaStatus')";
+   $sql = "INSERT INTO library_stock (mediaType, title, authorFirstName, authorLastName, shortDesrc, ISBN, publishDate, publisherName, publisherAddress, publisherSize, mediaStatus, img) VALUES ('$mediaType', '$title', '$authorFirstName', '$authorLastName', '$shortDesrc', '$ISBN', '$publishDate', '$publisherName', '$publisherAddress', '$publisherSize', '$mediaStatus', '$img->fileName')";
 
    if ($connect->query($sql) === true ) {
        $class = "success";
        $message = "The entry below was successfully created <br>
-            <table class='table w-50'><tr>
-            <td> $mediaType </td>
-            <td> $title </td>
-            <td> $authorFirstName </td>
-            <td> $authorLastName </td>
-            <td> $shortDesrc </td>
-            <td> $ISBN </td>
-            <td> $img </td>
-            <td> $publishDate </td>
-            <td> $publisherName </td>
-            <td> $size </td>
-            <td> $mediaStatus </td>
-            <td> $publisherAddress </td>
-
-            </tr></table><hr>";
+            <table class='table w-50'>
+              <tr>
+                <td> $mediaType</td>
+                <td> $title </td>
+                <td> $authorFirstName</td>
+                <td> $authorLastName</td>
+                <td> $shortDesrc</td>
+                <td> $ISBN</td>
+                <td> $publishDate</td>
+                <td> $publisherName</td>
+                <td> $publisherSize</td>
+                <td> $mediaStatus</td>
+                <td> $publisherAddress</td>
+              </tr>
+            </table>";
        $uploadError = ($img->error !=0)? $img->ErrorMessage :'';
    } else {
        $message = "Error while creating record. Try again: <br>" . $connect->error;
