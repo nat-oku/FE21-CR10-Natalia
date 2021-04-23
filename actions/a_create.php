@@ -23,7 +23,11 @@ if ($_POST) {
 
    if ($connect->query($sql) === true ) {
        $class = "success";
-       $message = "The entry below was successfully created <br>
+       $message = "
+        <h5>
+          The entry below was successfully created
+          <br><br><i class='far fa-smile-beam fs-1'></i>
+        </h5>
             <table class='table w-50'>
               <tr>
                 <td> $mediaType</td>
@@ -69,12 +73,14 @@ if ($_POST) {
    <body>
      <div class="container">
        <div class="mt-3 mb-3">
-        <h2 class="textColor-4">ERROR</h2>
+        <h2 class="textColor-4">Request response</h2>
       </div>
-       <div class="alert bgColor-5 textColor-1" role="alert">
+       <div class="alert bgColor-4 textColor-1" role="alert">
         <p><?php echo ($message) ?? ''; ?></p>
         <p><?php echo ($uploadError) ?? ''; ?></p>
-        <a href='../create.php'><button class="btn bgColor-1 textColor-5" type='button'>Go back</button></a>
+        <a href='../create.php'><button class="btn bgColor-5 textColor-1" type='button'>Go back to insert new item</button></a>
+        <a href='../index.php'><button class="btn bgColor-1 textColor-4" type='button'>Home</button></a>
+
       </div >
      </div>
    </body>
