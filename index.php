@@ -19,7 +19,8 @@
             <td>" .$row['ISBN']."</td>
             <td>" .$row['publishDate']."</td>
             <td>" .$row['publisherName']."</td>
-            <td>" .$row['size']."</td>
+            <td>" .$row['publisherAddress']."</td>
+            <td>" .$row['publisherSize']."</td>
             <td>" .$row['mediaStatus']."</td>
             <td><a href='update.php?id=" .$row['itemID']."'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
             <a href='delete.php?id=" .$row['itemID']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a></td>
@@ -71,9 +72,12 @@
           <th>Title</th>
           <th>Author</th>
           <th>Description</th>
+          <th>ISBN</th>
           <th>Date of Publication</th>
-          <th>Publisher</th>
-          <th>mediaStatus</th>
+          <th>Publisher Name</th>
+          <th>Publisher Address</th>
+          <th>Publisher Size</th>
+          <th>Status</th>
         </tr>
       </thead>
       <tbody class="w-100">
