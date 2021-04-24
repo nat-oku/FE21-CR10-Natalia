@@ -37,3 +37,10 @@ nav {
   }
 }
 
+
+.myImage {
+  max-height: 30em;    /*  or 100% of container */
+  max-width: auto;    /* or 100% of container */
+  object-fit: cover; /* none can be an option too as cover may deform it*/
+  object-position: 50% 50%;
+}
