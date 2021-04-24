@@ -44,13 +44,12 @@ if ($_GET['id']) {
   </head>
 
    <body>
-   <div class="container pt-3 pb-3">
-   <h2 class='textColor-4 text-center'>Update request</h2>
-    <fieldset class="bg-warning d-flex flex-row justify-content-around">
-      <legend>
-        <img class='bg-primary img-thumbnail' src='img/<?php echo $img ?>'>
-      </legend>
-      <form class="bg-success" action ="actions/a_update.php" method="post"  enctype="multipart/form-data">
+   <div class="container">
+     <h2 class='textColor-4 text-center mt-3 mb-3'>Update request</h2>
+     <div class="d-lg-flex justify-content-around">
+     <img class='img-thumbnail myImage' src='img/<?php echo $img ?>'>
+     <fieldset class="">
+      <form class="" action ="actions/a_update.php" method="post"  enctype="multipart/form-data">
         <table class="table">
           <tr>
             <th><h6>Media Type</h6></th>
@@ -107,13 +106,15 @@ if ($_GET['id']) {
           <tr>
             <input type= "hidden" name="id"  value="<?php echo $data['id'] ?>" />
             <input type= "hidden" name="img"  value="<?php echo $data['img'] ?>" />
-            <td><button class ="btn btn-success" type ="submit">Save Changes</button></td>
-            <td><a href="index.php" ><button class ="btn btn-warning" type="button">Back </button></a></td>
+            <td><button class ="btn bgColor-4 textColor-1 btn-lg" type ="submit">Save Changes</button></td>
+            <td><a href="index.php" ><button class ="btn bgColor-5 textColor-1 btn-lg" type="button">Home </button></a></td>
           </tr>
         </table>
       </form>
 
     </fieldset>
+     </div>
+     
 
    </div>
 
