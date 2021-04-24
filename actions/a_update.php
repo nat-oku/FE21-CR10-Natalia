@@ -11,9 +11,9 @@ if ($_POST) {
   $ISBN = $_POST['ISBN'];
   $publishDate = $_POST['publishDate'];
   $publisherName = $_POST['publisherName'];
+  $publisherAddress = $_POST['publisherAddress'];
   $publisherSize = $_POST['publisherSize'];
   $mediaStatus = $_POST['mediaStatus'];
-  $publisherAddress = $_POST['publisherAddress'];
   $id = $_POST['id'];
 
    //variable for upload pictures errors is initialized
@@ -49,7 +49,7 @@ if ($_POST) {
        publisherName = '$publisherName',
        publisherAddress = '$publisherAddress',
        publisherSize = '$publisherSize',
-       mediaStatus = '$mediaStatus',
+       mediaStatus = '$mediaStatus'
        WHERE id = {$id}";
    }
    if ($connect->query($sql) === TRUE) {
