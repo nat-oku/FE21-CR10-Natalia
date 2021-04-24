@@ -37,11 +37,11 @@ if  ($_POST) {
    <body>
        <div  class="container">
            <div class="mt-3 mb-3" >
-               <h1>Delete request response</h1>
+           <h2 class='textColor-4 text-center mt-3 mb-3'>Delete request response</h2>
            </div>
-            <div class="alert alert-<?=$class;?>" role="alert">
+            <div class="alert bgColor-4 textColor-1" role="alert">
                <p><?=$message;?></p >
-               <a href ='../index.php'><button class= "btn btn-success" type='button'> Home</button></a>
+               <a href ='../index.php'><button class= "btn bgColor-1 textColor-4" type='button'> Home</button></a>
             </div>
        </div >
    </body>
