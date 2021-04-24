@@ -22,8 +22,10 @@
             <td>" .$row['publisherAddress']."</td>
             <td>" .$row['publisherSize']."</td>
             <td>" .$row['mediaStatus']."</td>
-            <td><a href='update.php?id=" .$row['id']."'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
-            <a href='delete.php?id=" .$row['id']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a></td>
+            <td>
+              <a href='update.php?id=" .$row['id']."'><button class='btn bgColor-4 textColor-1 btn-sm mb-3' type='button'>Edit</button></a>
+              <a href='delete.php?id=" .$row['id']."'><button class='btn bgColor-5 textColor-1 btn-sm' type='button'>Delete</button></a>
+            </td>
         </tr>";
     };
   } else {
@@ -64,7 +66,7 @@
     <a href="create.php"><button class='btn bgColor-4 textColor-1'type = "button" >Add product</button></a>
   </div>
     <!-- inserting main section -->
-    <table class='table table-striped table-dark table-hover'>
+    <table class='table table-striped table-hover'>
       <thead class='table bgColor-4 textColor-1' >
         <tr>
           <th>Picture</th>
