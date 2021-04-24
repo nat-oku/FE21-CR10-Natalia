@@ -80,6 +80,8 @@
         
         <tr>
           <td><button class ='btn bgColor-5 textColor-1' type= "submit">Insert media item</button></td>
+          <td><button class ='btn bgColor-4 textColor-1' type= "submit">Cancel & go back</button></td>
+
         </tr>
 
       </table>
