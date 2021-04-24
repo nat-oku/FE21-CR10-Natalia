@@ -70,20 +70,27 @@ if ($_POST) {
 <!DOCTYPE html>
 <html lang= "en">
    <head>
-       <meta  charset="UTF-8">
+       <meta charset="UTF-8">
        <title>Update</title>
-       <?php require_once '../components/boot_CSS.php' ?> 
+       <!-- inserting fonts php file -->
+       <?php require_once '../components/fonts.php'?>
+       
+       <!-- inserting Bootstrap -->
+       <?php require_once '../components/boot_CSS.php'?>
+       
+       <!-- CSS only for this project -->
+    <link rel="stylesheet" href="../css/style.css">
    </head>
    <body>
        <div  class="container">
            <div class="mt-3 mb-3" >
                <h1>Update request response</h1>
            </div>
-            <div class="alert alert-<?php echo $class;?>" role="alert">
+            <div class="alert bgColor-4 textColor-1" role="alert">
                <p><?php echo ($message) ?? ''; ?></p>
                 <p><?php echo ($uploadError) ?? ''; ?></p>
-                <a href='../update.php?id=<?=$id;?>' ><button class="btn btn-warning" type='button'>Back</button></a>
-                <a href='../index.php'><button class="btn btn-success"  type='button'>Home</button></a>
+                <a href='../update.php?id=<?=$id;?>' ><button class="btn bgColor-1 textColor-4" type='button'>Back</button></a>
+                <a href='../index.php'><button class="btn bgColor-5 textColor-1"  type='button'>Home</button></a>
             </div>
        </div >
    </body>
