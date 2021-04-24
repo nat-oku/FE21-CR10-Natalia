@@ -59,7 +59,7 @@
     ?>
   </header>
 
-  <main class="container pt-3 pb-3">
+  <main class="p-3 p-3">
   <div class='mb-3'>
     <a href="create.php"><button class='btn bgColor-4 textColor-1'type = "button" >Add product</button></a>
   </div>
@@ -78,6 +78,7 @@
           <th>Publisher Address</th>
           <th>Publisher Size</th>
           <th>Status</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody class="w-100">
