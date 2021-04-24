@@ -4,7 +4,7 @@
   <nav class="align-self-start pt-5">
     <ul class="nav justify-content-center flex-column m-2">
       <li class="nav-item">
-        <a class="nav-link active fs-5" href="#">Home</a>
+        <a class="nav-link active fs-5" href="index.php">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active fs-5" href="#locations">Items</a>
