@@ -61,7 +61,9 @@
     ?>
   </header>
 
-  <main class="p-3 p-3">
+  <main class="p-3 p-3" id="media-list">
+  <h2 class='textColor-4 text-center mt-3 mb-3'>List of media in the library</h2>
+
   <div class='mb-3'>
     <a href="create.php"><button class='btn bgColor-4 textColor-1'type = "button" >Add product</button></a>
   </div>
