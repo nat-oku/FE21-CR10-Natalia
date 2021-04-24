@@ -10,7 +10,7 @@
         <a class="nav-link active fs-5" href="#locations">Items</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active fs-5" href="components/media-list.php">Media list</a>
+        <a class="nav-link active fs-5" href="media-overview.php">Media list</a>
       </li>
     </ul>
   </nav>
