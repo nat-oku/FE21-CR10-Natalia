@@ -45,12 +45,12 @@ if ($_GET['id']) {
 
    <body>
    <div class="container pt-3 pb-3">
-    <fieldset>
+   <h2 class='textColor-4 text-center'>Update request</h2>
+    <fieldset class="bg-warning d-flex flex-row  justify-content-around">
       <legend>
-        <h2 class='textColor-4 text-center'>Update request</h2>
-        <img class='img-thumbnail' src='img/<?php echo $img ?>'>
+        <img class='bg-primary img-thumbnail' src='img/<?php echo $img ?>'>
       </legend>
-      <form action ="actions/a_update.php" method="post"  enctype="multipart/form-data">
+      <form class="bg-success" action ="actions/a_update.php" method="post"  enctype="multipart/form-data">
         <table class="table">
           <tr>
             <th><h6>Media Type</h6></th>
