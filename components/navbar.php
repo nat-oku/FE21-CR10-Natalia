@@ -7,10 +7,10 @@
         <a class="nav-link active fs-5" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active fs-5" href="#locations">Items</a>
+        <a class="nav-link active fs-5" href="#media-list">Media list</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active fs-5" href="media-overview.php">Media list</a>
+        <a class="nav-link active fs-5" href="create.php">Add item</a>
       </li>
     </ul>
   </nav>
