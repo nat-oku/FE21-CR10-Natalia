@@ -2,7 +2,7 @@
 
 <div class="bg-image d-flex ">
   <nav class="align-self-start pt-5">
-    <ul class="nav justify-content-center flex-column m-2">
+    <ul class="nav flex-column">
       <li class="nav-item">
         <a class="nav-link active fs-5" href="index.php">Home</a>
       </li>
