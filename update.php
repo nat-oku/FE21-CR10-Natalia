@@ -46,7 +46,7 @@ if ($_GET['id']) {
    <body>
    <div class="container pt-3 pb-3">
    <h2 class='textColor-4 text-center'>Update request</h2>
-    <fieldset class="bg-warning d-flex flex-row  justify-content-around">
+    <fieldset class="bg-warning d-flex flex-row justify-content-around">
       <legend>
         <img class='bg-primary img-thumbnail' src='img/<?php echo $img ?>'>
       </legend>
