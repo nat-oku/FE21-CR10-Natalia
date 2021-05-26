@@ -3,14 +3,14 @@
 
 <?php
 
-  $sql = "SELECT * FROM library_stock group by publisherName";
+  $sql = "SELECT * FROM library_stock where publisherId = publisherId group by publisherName";
   $result = mysqli_query($connect ,$sql);
   $tbody=''; //this variable will hold the body for the table
   if(mysqli_num_rows($result)  > 0) {    
       while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){        
          $tbody .= "<tr>
          <td>" .$row['publisherName']."</td>
-         <td><a href='details.php?publisherName=".$row['publisherName']."'><button class='mt-3 btn btn-danger btn-sm' type='button'>See details</button></a>
+         <td><a href='publisher-details.php?publisherId=".$row['publisherId']."'><button class='mt-3 btn btn-danger btn-sm' type='button'>See details</button></a>
          </td>";
      };
   } else {

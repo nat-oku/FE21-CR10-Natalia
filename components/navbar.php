@@ -13,7 +13,7 @@
         <a class="nav-link active fs-5" href="create.php">Add item</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active fs-5" href="details.php">Details</a>
+        <a class="nav-link active fs-5" href="publishers.php">Publishers</a>
       </li>
     </ul>
   </nav>
