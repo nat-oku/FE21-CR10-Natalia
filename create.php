@@ -27,7 +27,7 @@
   <div class="container pt-3 pb-3">
   <fieldset class="">
     <legend><h2 class='textColor-4 text-center'>Add media to library</h2></legend>
-    <a href ='index.php'><button class ='btn bgColor-4 textColor-1'>Cancel & go back</button>
+    <a href ='index.php'><button class ='btn bgColor-4 textColor-1'>Cancel & go back</a>
 
     <form action="actions/a_create.php" method="post" enctype="multipart/form-data">
       <table class='table text-end'>
