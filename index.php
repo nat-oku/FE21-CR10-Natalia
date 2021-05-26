@@ -14,7 +14,7 @@
 
             <td><img class='img-thumbnail' src='img/" .$row['img']."'</td>
 
-            <a href='details.php?id=".$row['id']."'><button class='btn btn-danger btn-sm' type='button'>See details</button></a>
+            <a href='details.php?id=".$row['id']."'><button class='mt-3 btn btn-danger btn-sm' type='button'>See details</button></a>
 
             <td>" .$row['mediaType']."</td>
             <td>" .$row['title']."</td>
