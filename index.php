@@ -3,6 +3,7 @@
 
 <!-- connecting the index file to the table "	library_stock" -->
 <?php
+  //$sql = "SELECT * FROM recipes r INNER JOIN user u ON u.pk_userid = r.fk_userid  Where pk_recipeid = {$id}";
   $sql = "SELECT * FROM library_stock";
   $result = mysqli_query($connect ,$sql);
   $tbody='';
@@ -12,6 +13,9 @@
         <tr>
 
             <td><img class='img-thumbnail' src='img/" .$row['img']."'</td>
+
+            <a href='details.php?id=".$row['id']."'><button class='btn btn-danger btn-sm' type='button'>See details</button></a>
+
             <td>" .$row['mediaType']."</td>
             <td>" .$row['title']."</td>
             <td>" .$row['authorFirstName']." ".$row['authorLastName']."</td>

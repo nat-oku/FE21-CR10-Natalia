@@ -12,6 +12,9 @@
       <li class="nav-item">
         <a class="nav-link active fs-5" href="create.php">Add item</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link active fs-5" href="details.php">Details</a>
+      </li>
     </ul>
   </nav>
 
