@@ -9,10 +9,10 @@
     if ($result->num_rows == 1) {
       foreach($result as $value)
       {
-        var_dump($value);
+        //var_dump($value);
       }
       
-      var_dump($result);
+      //var_dump($result);
       // echo gettype($result);
       $mediaType = $data['mediaType'];
       $id = $data['id'];
